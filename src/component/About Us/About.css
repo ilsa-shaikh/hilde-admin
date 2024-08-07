@@ -1,0 +1,98 @@
+.doccontainer1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1% 3%;
+    background-color: white;
+    border-radius: 6px;
+    width: 50%;
+}
+
+.Viewdata {
+    padding: 10px;
+    text-align: left;
+}
+
+.ckedit_button {
+    background-color: var(--red);
+    padding: 8px 12px;
+    width: 30%;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+}
+
+.ck.ck-editor__editable_inline {
+    border: 1px solid #ccced1 !important;
+}
+
+.view_button {
+    margin: 10px 0;
+    padding: 2px 5px;
+    color: var(--red);
+    border: 1px solid var(--red);
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.languageoptionswithdoc {
+    display: flex;
+    width: 88%;
+    margin: 20px auto;
+    gap: 10px
+}
+
+.languageoptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    /* width: 50%; */
+
+}
+
+.active_profile {
+    border-bottom: 2px solid var(--red) !important;
+}
+
+.active_profile>a {
+    color: var(--red) !important
+}
+
+.languageoptions>li {
+    /* width: 24.5%; */
+    text-align: center;
+    list-style-type: none;
+    padding: 15px 0;
+
+
+}
+
+.languageoptions>li>a {
+    width: 100%;
+    text-decoration: none;
+    color: black
+}
+
+@media(max-width:1250px) {
+    .languageoptionswithdoc {
+        width: 93%;
+    }
+}
+
+@media(max-width:950px) {
+    .languageoptionswithdoc {
+        width: 96%;
+    }
+
+    .languageoptions {
+        font-size: 12px;
+
+    }
+}

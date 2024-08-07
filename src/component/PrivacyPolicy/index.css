@@ -1,0 +1,80 @@
+.ckedit_button {
+    background-color: var(--red);
+    padding: 8px 12px;
+    width: 30%;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+}
+
+.ck.ck-editor__editable_inline {
+    border: 1px solid #ccced1 !important;
+}
+
+.view_button {
+    margin: 10px 0;
+    padding: 2px 5px;
+    color: var(--red);
+    border: 1px solid var(--red);
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.languageoptionswithdoc {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+
+}
+
+.languageoptions {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    justify-content: space-evenly;
+    background-color: white;
+
+}
+
+.active_profile {
+    border-bottom: 2px solid var(--red) !important;
+}
+
+.active_profile>a {
+    color: var(--red) !important
+}
+
+.languageoptions>li {
+    width: 24.5%;
+    text-align: center;
+    list-style-type: none;
+    padding: 15px 0;
+
+
+}
+
+.languageoptions>li>a {
+    width: 100%;
+    text-decoration: none;
+    color: black
+}
+
+@media(max-width:1250px) {
+    .languageoptions {
+        width: 93%;
+    }
+}
+
+@media(max-width:950px) {
+    .languageoptions {
+        width: 96%;
+        font-size: 12px;
+    }
+}

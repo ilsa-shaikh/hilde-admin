@@ -1,0 +1,213 @@
+.userdetails_heading {
+    font-size: 20px;
+    margin: 0px 5%;
+    margin-top: 30px;
+    color: #333;
+
+}
+
+.userdetails {
+    display: flex;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: 10px auto;
+    margin-top: 0 !important;
+    text-align: center;
+    padding: 1% 3%;
+    gap: 15px
+}
+
+.userdata_lng {
+    margin: 10px 0;
+    margin-left: 20px;
+
+    li {
+
+        margin: 5px 0;
+
+        span {
+            font-weight: 100;
+        }
+    }
+}
+
+.interest_img {
+    width: 20px;
+    height: 20px;
+}
+
+.userdetails_up {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.userprofile_up {
+    width: 360px;
+    text-align: center;
+    background-color: var(--black);
+    color: #ffffffe2;
+    font-family: Poppins;
+    padding: 12% 20px;
+}
+
+.userprofile_up_imglist {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.userprofile_up_imglist>img {
+    width: 110px;
+    height: 110px
+}
+
+.userprofile_down {
+    width: 100%;
+    background-color: #fff;
+}
+
+.userpost {
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+
+.username {
+    font-size: 20px;
+}
+
+
+.userbio {
+    margin: auto;
+    width: 90%;
+    font-size: 14px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+
+
+
+}
+
+
+.userpost>h1 {
+    font-size: 27px;
+}
+
+.userdetails_down {
+    width: calc(100% - 415px);
+    text-align: left;
+    background-color: #fff;
+    color: #1E1E44;
+    padding: 3% 0;
+    font-family: Poppins;
+
+}
+
+.userdata {
+    margin: 10px 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Poppins;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.userdata>span {
+    font-weight: normal;
+    word-wrap: break-word;
+    width: 75%;
+    text-align: left;
+}
+
+.userdata_interest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.userdata_interest>span {
+    border-radius: 40px;
+    border: 2px solid #E6EFF1;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.userreports {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 12px 30px;
+
+}
+
+.userreports>h1 {
+    font-size: 20px;
+    color: darkcyan
+}
+
+.userdeactive_button {
+    background-color: #c42a2a;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.useractive_button {
+    background-color: rgb(42, 196, 55);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user_notification {
+    display: none;
+}
+
+@media(max-width:1400px) {
+    .userdetails {
+        flex-direction: column;
+    }
+
+    .userdetails_up {
+        width: 100%
+    }
+
+    .userprofile_up {
+        width: 100%;
+        padding: 5% 0;
+
+    }
+
+
+    .userprofile_down {
+        display: none;
+    }
+
+    .userdetails_down {
+        width: 100%;
+    }
+
+    .user_notification {
+        display: block;
+        background-color: #fff;
+        width: 84%;
+        margin: 40px auto;
+        margin-top: 0 !important;
+        padding: 1% 3%;
+    }
+}

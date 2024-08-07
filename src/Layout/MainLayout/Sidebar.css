@@ -1,0 +1,118 @@
+.Sidebar {
+    flex-direction: column;
+    width: 250px;
+    z-index: 0;
+
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        display: block;
+    }
+}
+
+.sidebar_logo {
+    margin: 6px 0;
+    width: 85px;
+    text-align: center;
+
+}
+
+.Sidebar_logodiv {
+    text-align: center;
+    border-bottom: 1px solid var(--bg2);
+}
+
+.sidebar_alllist {
+    display: flex;
+    flex-direction: column;
+}
+
+.SidebarItem {
+    list-style-type: none;
+}
+
+.SidebarItem>a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--blurblack);
+    margin: 5px 10px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        border-radius: 5px;
+        color: var(--red);
+    }
+}
+
+.SidebarItem>div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--grey5);
+    margin: 5px 10px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Selectedsidebar {
+    list-style-type: none;
+    border-radius: 0px;
+    border-right: 4px solid var(--red);
+    background: linear-gradient(to left, rgba(58, 152, 90, 1), rgba(23, 76, 41, 1));
+
+}
+
+.Selectedsidebar>a,
+.Selectedsidebar>div {
+    color: var(--bg);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 5px 10px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarlabel {
+    font-size: 14px;
+    font-family: Be Vietnam Pro;
+}
+
+.appbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--bg2);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 25px;
+    z-index: 1;
+}
+
+.appbarprofileimg {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--grey);
+    cursor: pointer;
+}
+
+@media(max-width:900px) {
+    .appbar {
+        width: calc(100% - 20px);
+        justify-content: space-between
+    }
+}

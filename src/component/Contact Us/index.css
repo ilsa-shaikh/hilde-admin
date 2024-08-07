@@ -1,0 +1,255 @@
+.suggestion-box {
+  width: 300px;
+  box-shadow: 1px 1px 5px #dcdbdb;
+  background-color: #fff;
+  padding: 10px 0;
+  position: absolute;
+  right: 7%;
+  height: 300px;
+  overflow: auto;
+}
+
+.suggestion-box>ul {
+  list-style: none;
+  font-size: 15px;
+  color: var(--black);
+}
+
+.suggestion-box>ul>li {
+  padding: 7px 10px;
+}
+
+.suggestion-box>ul>li:hover {
+  background-color: #dcdbdb;
+}
+
+.data_heading {
+  font-size: 18px;
+  margin: 15px;
+  color: #333;
+  text-align: center;
+
+}
+
+.container1 {
+  width: 82%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1% 3%;
+  background-color: white;
+  border-radius: 6px;
+
+}
+
+.data_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchicon {
+  width: 230px;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  margin: 5px;
+  margin-bottom: 15px !important;
+  float: right;
+
+}
+
+.searchicon>input {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+  font-size: 13px;
+}
+
+.data_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  border: 1px solid #dcdbdb;
+
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171); */
+}
+
+.data_table th,
+.data_table td {
+  padding: 13px;
+  text-align: left;
+  vertical-align: middle;
+  overflow: hidden;
+  border-top: 1px solid #dcdbdb;
+
+
+}
+
+.data_table tr {
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.data_table tr:hover {
+  background-color: #EDF5F6;
+}
+
+.data_table th {
+  /* background-color: #f7f7f7; */
+  color: var(--black);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.data_table td {
+  font-size: 13px;
+}
+
+
+.data_userdetails {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.data_userdetails_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.data_userdetails_roomimg {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.data_button_view {
+  background: linear-gradient(90deg, var(--red) 36%, var(--red));
+  padding: 5px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.term_button {
+  background: linear-gradient(180deg, #b33b3d 0%, var(--red) 100%);
+  padding: 8px 12px;
+  width: 30%;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin: 10px 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+}
+
+.cancel_data {
+  border: 1px solid #d51010;
+  color: #d51010;
+  padding: 1px 5px;
+  text-wrap: nowrap;
+  border-radius: 50px;
+
+
+}
+
+.complete_data {
+  border: 1px solid #3ba910;
+  color: #3ba910;
+  padding: 1px 5px;
+  text-wrap: nowrap;
+  border-radius: 50px;
+
+}
+
+.data_add {
+  font-size: 40px;
+  background-color: #b33b3d;
+  border-radius: 5px;
+  color: white;
+  width: 45px;
+  margin: 10px;
+}
+
+@media(max-width:1250px) {
+  .container1 {
+    width: 87%;
+  }
+
+}
+
+@media(max-width:950px) {
+  .data_heading {
+    font-size: 18px;
+
+  }
+
+  .searchicon {
+    padding: 0px 10px;
+  }
+
+  .searchicon>input {
+    height: 25px;
+  }
+
+  .container1 {
+    width: 90%;
+  }
+
+  .data_table th {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+}
+
+@media(max-width:600px) {
+  .data_head {
+    flex-direction: column;
+  }
+
+  .data_heading {
+    font-size: 16px;
+
+  }
+
+  .data_userdetails {
+    flex-direction: column;
+    align-items: normal;
+    text-align: center;
+  }
+
+  .container1 {
+    width: 90%;
+
+  }
+
+  .data_table_over {
+    overflow-x: scroll;
+
+  }
+
+  .data_table th {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .pagination_activebutton,
+  .pagination_button {
+    font-size: 12px;
+
+  }
+}

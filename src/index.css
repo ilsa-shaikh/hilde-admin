@@ -1,13 +1,38 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Be Vietnam Pro;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  color: var(--black) !important;
+}
+
+:root {
+  --red: #2e7d48;
+  --red2: #4f9f6a;
+  --errorred: rgba(212, 22, 22, 1);
+  --lightred: #FFE2E3;
+  --bg: rgba(233, 242, 236, 1);
+  --bg2: rgb(204, 225, 211);
+  --black: #1d2821;
+  --blurblack: #1d2821c4;
+  --white: #ffffff;
+  --blurwhite: #ffffffde;
+  --yellow: #FEE24C;
+  --grey: #D9D9D9;
+  --grey1: #838383;
+  --grey2: #F9F9F9;
+  --grey3: #6F6F6F;
+  --grey4: #BDBDBD;
+  --grey5: #5F5F5F;
+  --grey6: #f5f5f5;
+}
+
+button,
+input {
+  font-family: Be Vietnam Pro;
+
 }

@@ -1,0 +1,73 @@
+/* body {
+    font-family: ""DM Sans"";
+} */
+
+.editdata {
+    width: 75%;
+    margin: 20px auto;
+    padding: 3% 5%;
+    background-color: #fff;
+
+}
+
+.edit_profileimg {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: auto;
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+}
+
+.edit_profileimg>input[type="file"] {
+    display: none;
+}
+
+.editprofile_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.edit_cameraicn {
+    position: absolute;
+    bottom: 1%;
+    right: 1%
+}
+
+.edit_button {
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--red);
+    padding: 10px 35px;
+    margin: 25px auto;
+    display: block;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    font-family: Poppins;
+
+}
+
+.edit_input {}
+
+/* @media(max-width:1300px) {
+    .editdata {
+        margin: 60px auto;
+        padding: 5% 0;
+        width: 700px;
+
+    }
+
+}
+
+@media(max-width:750px) {
+    .editdata {
+        width: 100%;
+        border: none;
+    }
+
+} */

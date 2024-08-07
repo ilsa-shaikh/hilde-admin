@@ -1,0 +1,39 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paginationbtns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px
+}
+
+.pagination_button {
+    padding: 5px;
+    background-color: var(--grey);
+    border: 1px solid #ddd;
+    color: var(--blurwhite);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.pagination_button:disabled {
+    cursor: not-allowed;
+    color: #fffdfdb1;
+    background-color: var(--grey);
+}
+
+.pagination_activebutton {
+    padding: 8px 12px;
+    /* background: linear-gradient(180deg, #7A7AB1 0%, #1E1E44 100%); */
+    background: var(--red);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+}

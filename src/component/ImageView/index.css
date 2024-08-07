@@ -1,0 +1,20 @@
+.imagefullview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.closeicon {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    overflow: auto;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
