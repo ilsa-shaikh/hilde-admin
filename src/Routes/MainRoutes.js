@@ -76,12 +76,12 @@ const MainRoutes = {
   ],
 };
 
-const MainRoutesWithProtection = {
-  element: <MainLayout />,
-  children: MainRoutes.children.map((route) => ({
-    ...route,
-    element: <ProtectedRoute>{route.element}</ProtectedRoute>,
-  })),
-};
+// const MainRoutesWithProtection = {
+//   element: <MainLayout />,
+//   children: MainRoutes.children.map((route) => ({
+//     ...route,
+//     element: <ProtectedRoute>{route.element}</ProtectedRoute>,
+//   })),
+// };
 
-export default MainRoutesWithProtection;
+export default MainRoutes;

@@ -13,7 +13,7 @@ body {
 :root {
   --red: #2e7d48;
   --red2: #4f9f6a;
-  --errorred: rgba(212, 22, 22, 1);
+  --errorred: rgb(124, 134, 225);
   --lightred: #FFE2E3;
   --bg: rgba(233, 242, 236, 1);
   --bg2: rgb(204, 225, 211);

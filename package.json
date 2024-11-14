@@ -29,6 +29,7 @@
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "stream": "^0.0.2",
+    "tsparticles": "^3.5.0",
     "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },

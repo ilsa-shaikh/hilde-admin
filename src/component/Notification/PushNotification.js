@@ -119,11 +119,7 @@ const PushNotification = ({ id }) => {
             ) : null}
           </div>
 
-          <button
-            className="interest_addbutton"
-            type="submit"
-            disabled={loading}
-          >
+          <button className="ckedit_button" type="submit" disabled={loading}>
             {loading ? "Sending......." : "Send"}
           </button>
         </form>

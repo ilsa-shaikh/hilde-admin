@@ -8,7 +8,7 @@ import { userlist } from "../../service/Mainservice";
 
 const UserList = () => {
   const [loading, setloading] = useState(true);
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   const [searchvalue, setsearchvalue] = useState();
   const [pagination, setpagination] = useState({ page: 1 });
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ const UserList = () => {
     try {
       const response = await userlist(page, searchvalue);
       console.log(response.data);
-      setData(response.data.data);
+      // setData(response.data.data);
       setpagination(response.data.pagination);
       setloading(false);
     } catch (error) {
@@ -37,6 +37,24 @@ const UserList = () => {
     }
   };
 
+  const data = [
+    {
+      uuid: "INss3xIqEyZkLg1gfhdrgycSLej2",
+      first_name: "Naved",
+      last_name: "Shaikh",
+      email: "example@gmail.com",
+      phone_number: "988324235",
+      date_created: "2024-07-24",
+    },
+    {
+      uuid: "84f0ce3ac2008dfa9aee7f87c7da37",
+      first_name: "Naved",
+      last_name: "Shaikh",
+      email: "example@gmail.com1",
+      phone_number: "1234567890",
+      date_created: "2024-07-26",
+    },
+  ];
   return (
     <>
       <div className="container1">
@@ -58,12 +76,11 @@ const UserList = () => {
           <table className="data_table">
             <thead>
               <tr>
+                <th>Id</th>
                 <th>User</th>
                 <th>Mobile Number</th>
                 <th>Email</th>
-                <th>Subsciption</th>
-                <th>Status</th>
-                {/* <th>Action</th> */}
+                <th>Create At</th>
               </tr>
             </thead>
             <tbody>
@@ -78,6 +95,8 @@ const UserList = () => {
                     })
                   }
                 >
+                  <td>{item.uuid}</td>
+
                   <td>
                     {/* <img
                       src={
@@ -87,32 +106,11 @@ const UserList = () => {
                       alt="profile"
                       className="data_userdetails_img"
                     /> */}
-                    {item.full_name}
+                    {item.first_name + " " + item.last_name}
                   </td>
-                  <td>{item.country_code + item.phone_number}</td>
+                  <td>{item.phone_number}</td>
                   <td>{item.email}</td>
-                  <td>
-                    {item.is_block ? (
-                      <span className="cancel_data">Yes</span>
-                    ) : (
-                      <span className="complete_data">No</span>
-                    )}
-                  </td>
-                  <td>
-                    {item.is_block ? (
-                      <span className="cancel_data">Deactive</span>
-                    ) : (
-                      <span className="complete_data">Active</span>
-                    )}
-                  </td>
-                  {/* <td>
-                    <button
-                      onClick={() => navigate("/User_Details")}
-                      className="data_button_view"
-                    >
-                      View
-                    </button>
-                  </td> */}
+                  <td>{item.date_created}</td>
                 </tr>
               ))}
             </tbody>

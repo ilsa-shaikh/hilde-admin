@@ -118,7 +118,7 @@ function ResponsiveDrawer(props) {
             </div>
           </li>
         )}
-        <li
+        {/* <li
           className={
             CheckPath("/ContactUs_List") ? "Selectedsidebar" : "SidebarItem"
           }
@@ -145,7 +145,7 @@ function ResponsiveDrawer(props) {
               <p className="sidebarlabel">ContactUs details</p>
             </div>
           </li>
-        )}
+        )} */}
         <li
           className={
             CheckPath("/Push_Notification") ? "Selectedsidebar" : "SidebarItem"

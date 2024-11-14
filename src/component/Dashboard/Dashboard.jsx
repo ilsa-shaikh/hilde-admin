@@ -13,23 +13,24 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    getData();
+    setloading(false);
+    // getData();
   }, []);
 
-  const getData = async () => {
-    try {
-      const data = await dashboard();
-      console.log(data);
-      setloading(false);
-      setdetails(data.data.data);
-    } catch (error) {
-      setloading(false);
-      if (error.code === 401) {
-        localStorage.clear();
-        navigate("/");
-      }
-    }
-  };
+  // const getData = async () => {
+  //   try {
+  //     const data = await dashboard();
+  //     console.log(data);
+  //     setloading(false);
+  //     setdetails(data.data.data);
+  //   } catch (error) {
+  //     setloading(false);
+  //     if (error.code === 401) {
+  //       localStorage.clear();
+  //       navigate("/");
+  //     }
+  //   }
+  // };
 
   // const option = {
   //   labels: ["Private Account", "Public Account"],
@@ -101,7 +102,7 @@ const Dashboard = () => {
             <GroupIcon sx={{ fontSize: "30px", color: "var(--white)" }} />
           </div>
           <div className="card_data">
-            <h1>{details.total_users}1223</h1>
+            <h1>{details.total_users}550</h1>
 
             <p>Total Users</p>
           </div>
@@ -114,8 +115,20 @@ const Dashboard = () => {
             />
           </div>
           <div className="card_data">
-            <h1>423{details.active_users}</h1>
-            <p>Active Users</p>
+            <h1>430{details.active_users}</h1>
+            <p>Android Users</p>
+          </div>
+          <div className="go-corner" />
+        </div>
+        <div className="card">
+          <div className="card_icon">
+            <PersonOutlineIcon
+              sx={{ fontSize: "30px", color: "var(--white)" }}
+            />
+          </div>
+          <div className="card_data">
+            <h1>120{details.active_users}</h1>
+            <p>Ios Users</p>
           </div>
           <div className="go-corner" />
         </div>

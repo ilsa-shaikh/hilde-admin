@@ -24,7 +24,7 @@ function Pagination({ pagedata, onPageChange }) {
         </button>
 
         <button className="pagination_activebutton">
-          {pagedata.current_pages}{" "}
+          {/* {pagedata.current_pages} */}1
         </button>
 
         <button
