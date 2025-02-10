@@ -25,6 +25,7 @@ const profile = async () => {
     throw error.response.data;
   }
 };
+
 const editprofile = async (data, image) => {
   try {
     const params = new FormData();
